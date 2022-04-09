@@ -584,6 +584,7 @@ for l in layer_dictionary:
 conv_output_shape = model.layers[-8].output.shape[1:]
 
 plt.figure(figsize=(30, 60))
+wandb_img = []
 for i in range(10):
     # Index of a random pixel
     neuron_index_x = np.random.randint(0, conv_output_shape[0])
@@ -612,4 +613,6 @@ for i in range(10):
     plt.imshow(img_guided_bp)
     wandb_img.append(img_guided_bp)
     plt.axis("off")
+    for j in range(len(wandb_img)):
+        wandb.log({"Guided Backpropagation": [wandb.Image(wandb_img[j])]})
 plt.show()

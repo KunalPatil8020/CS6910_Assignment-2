@@ -1,0 +1,28 @@
+sweep_config = {
+  "name": "Assignment 2 - Part B",
+  "metric": {
+      "name":"val_accuracy",
+      "goal": "maximize"
+  },
+  "method": "random",
+  "parameters": {
+        "data_aug": {
+            "values": [True, False]
+        },
+        "train_batch_size": {
+            "values": [64, 128]
+        },
+        "dropout": {
+            "values": [0, 0.2, 0.1]
+        },
+        "fc_layer": {
+            "values": [128, 256, 512]
+        },
+        "pre_layer_train": {
+            "values": [None, 10, 20]
+        },
+        "epochs":{
+            "values": [5]
+        }
+    }
+}

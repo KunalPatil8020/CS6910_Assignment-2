@@ -236,7 +236,7 @@ def train_validate_model(train_batch_size, pre_train_model, data_aug, activation
 
 """# Run Wandb sweeps"""
 
-pre_train_model = "Xception"#change here to change model for wandb sweeps
+pre_train_model = "Xception" #InceptionV3, InceptionResNetV2, ResNet50   change here to change model for wandb sweeps
 activation_function_dense = "relu"#set as default
 
 def train_validate_model_wandb():

@@ -10,7 +10,7 @@ sweep_config = {
             "values": [True, False]
         },
         "train_batch_size": {
-            "values": [64, 128]
+            "values": [128, 256]
         },
         "dropout": {
             "values": [0, 0.2, 0.1]
@@ -22,7 +22,7 @@ sweep_config = {
             "values": [None, 10, 20]
         },
         "epochs":{
-            "values": [5]
+            "values": [5,10]
         }
     }
 }

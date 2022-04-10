@@ -12,9 +12,7 @@ Tensorflow 2.4.1
 We have used the iNaturalist Dataset ("https://storage.googleapis.com/wandb_datasets/nature_12K.zip").
 ## Installing
 Install the required libraries in your environment using this command:
-```http
   pip install -r requirements.txt
-```
 
 ## For data preparation
 For data prepocessing for both parts use data_preprocessing.py
